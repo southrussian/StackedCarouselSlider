@@ -19,8 +19,40 @@ struct Home: View {
     ]
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack(alignment: .bottom) {
+                VStack(alignment: .leading) {
+                    Text(self.dateFormatting())
+                        .font(.largeTitle.bold())
+                    
+                    Label {
+                        Text("Rostov-On-Don, Russia")
+                    } icon: {
+                        Image(systemName: "location.circle")
+                    }
+                    
+                }
+                Spacer()
+                
+                Text("Updated 9:41")
+                    .font(.caption2)
+                    .fontWeight(.light)
+            }
+            .padding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        }
     }
+    
+    func dateFormatting() -> String {
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE dd MMMM yyyy"
+        let mydt = dateFormatter.string(from: date).capitalized
+
+        return "\(mydt)"
+    }
+
+    
 }
 
 struct Home_Previews: PreviewProvider {
