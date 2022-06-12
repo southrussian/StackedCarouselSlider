@@ -11,6 +11,8 @@
 		588B2F3E2856840300A3607C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F3D2856840300A3607C /* ContentView.swift */; };
 		588B2F402856840500A3607C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 588B2F3F2856840500A3607C /* Assets.xcassets */; };
 		588B2F432856840500A3607C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 588B2F422856840500A3607C /* Preview Assets.xcassets */; };
+		588B2F4C2856848700A3607C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F4B2856848700A3607C /* Card.swift */; };
+		588B2F4F285684F900A3607C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F4E285684F900A3607C /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		588B2F3D2856840300A3607C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		588B2F3F2856840500A3607C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		588B2F422856840500A3607C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		588B2F4B2856848700A3607C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		588B2F4E285684F900A3607C /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		588B2F3A2856840300A3607C /* StackedCarouselSlider */ = {
 			isa = PBXGroup;
 			children = (
+				588B2F4A2856847300A3607C /* Model */,
+				588B2F492856846C00A3607C /* View */,
 				588B2F3B2856840300A3607C /* StackedCarouselSliderApp.swift */,
 				588B2F3D2856840300A3607C /* ContentView.swift */,
 				588B2F3F2856840500A3607C /* Assets.xcassets */,
@@ -65,6 +71,22 @@
 				588B2F422856840500A3607C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		588B2F492856846C00A3607C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				588B2F4E285684F900A3607C /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		588B2F4A2856847300A3607C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				588B2F4B2856848700A3607C /* Card.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				588B2F3E2856840300A3607C /* ContentView.swift in Sources */,
+				588B2F4C2856848700A3607C /* Card.swift in Sources */,
+				588B2F4F285684F900A3607C /* Home.swift in Sources */,
 				588B2F3C2856840300A3607C /* StackedCarouselSliderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
